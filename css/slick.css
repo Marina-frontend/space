@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+}
+
+/* Слайд */
+.slick-slide {
+  box-sizing: border-box;
+}
+/* Слайд активный */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+
+/* Точки */
+.slick-dots {
+}
+.slick-dots li {
+}
+.slick-dots button {
+}
+
+/* Конкретный слайдер */
+.sliderbig .slider {
+  text-align: center;
+}
+.sliderbig {
+  grid-column: 2 /3;
+  grid-row: 2 /3;
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0 0 45px 0;
+}
+
+@media (max-width: 767px) {
+  .sliderbig {
+    margin: 0 0 30px 0;
+  }
+}
+
+.sliderbig__item {
+  margin: 0px 10px;
+  max-width: 750px;
+}
+.sliderbig__item img {
+  max-width: 100%;
+  border-radius: 40px;
+}
+
+.slider {
+  grid-column: 2 / 3;
+  grid-row: 3 /4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0px 60px;
+  max-width: 1300px;
+}
+
+.slider .slick-list {
+  max-width: 1117px;
+}
+
+@media (max-width: 767px) {
+  .slider {
+    padding: 0px;
+  }
+}
+.slider__item {
+  margin: 0px 15px;
+  max-width: 165px;
+}
+.slider__item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  margin-bottom: -6px;
+}
+
+.slider__item.slick-slide.slick-current {
+  border-radius: 40px;
+  border: 10px solid #ffffff;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -28px 0px 0px 0px;
+  z-index: 30;
+  font-size: 0;
+  width: 56px;
+  height: 56px;
+}
+
+@media (min-width: 1100px) {
+  .slider .slick-arrow.slick-prev {
+    left: -30px;
+    background: url("../img/sl_arrow_l.png") 0 0 / 100% no-repeat;
+  }
+  .slider .slick-arrow.slick-next {
+    right: -30px;
+    background: url("../img/sl_arrow_r.png") 0 0 / 100% no-repeat;
+  }
+  .slider .slick-arrow.slick-disabled {
+    opacity: 0.2;
+  }
+}
