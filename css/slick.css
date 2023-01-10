@@ -93,14 +93,21 @@
   max-width: 1117px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .slider {
     padding: 0px;
+    margin: 0px;
   }
 }
 .slider__item {
   margin: 0px 15px;
   max-width: 165px;
+}
+
+@media(max-width:767px){
+  .slider__item {
+    margin: 0px 5px;
+  }
 }
 .slider__item img {
   width: 100%;
