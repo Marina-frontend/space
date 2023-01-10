@@ -17,9 +17,23 @@ $(document).ready(function(){
         focusOnSelect: true,
         responsive:[
             {
-                breakpoint: 1000,
+                breakpoint: 1100,
+                settings:{
+                    slidesToShow: 4,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 800,
                 settings:{
                     slidesToShow: 3,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 500,
+                settings:{
+                    slidesToShow: 2,
                     arrows: false
                 }
             }
